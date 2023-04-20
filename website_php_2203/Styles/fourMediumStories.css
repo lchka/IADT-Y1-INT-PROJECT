@@ -1,0 +1,15 @@
+.fourMediumComponents {
+    background-color: #e6e6e6;
+    
+}
+
+.greyBlock .header {
+    margin-right:100px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #194fb0;
+} 
+.greyBlock h4 {
+    
+    margin-bottom: 10px;
+    
+}

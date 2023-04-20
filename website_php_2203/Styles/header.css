@@ -1,0 +1,60 @@
+.name .latestStory h1 {
+    color: #da0000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+}
+
+.name .newsletter h1 {
+    text-transform: none;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+header {
+    background-color: #7F9DBA;
+    padding-bottom: 10px;
+}
+
+header .container {
+    border-bottom: 1px solid white;
+}
+
+header .navBarSignIn {
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .navBarSignIn a {
+    padding: 10px 15px 10px 15px;
+}
+
+header .navBarSignIn a:hover {
+    color: white;
+    background-color: #96badb;
+    border-radius: 20px;
+}
+
+header .navBar {
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .navBar a {
+    padding: 10px 15px 10px 15px;
+}
+
+header .navBar a:hover {
+    color: white;
+    background-color: #96badb;
+    border-radius: 20px;
+}

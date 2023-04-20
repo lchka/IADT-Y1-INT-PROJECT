@@ -1,0 +1,95 @@
+    .story {
+        display: flex;
+    }
+    
+    .sixStoriesAndRight .rightSide {
+        display: grid;
+    }
+    
+    .sixStoriesAndRight .mainStoryLeft02 {
+        padding-left: 55px;
+        border-left: 1px solid #848484;
+    }
+    
+    .sixStoriesAndRight .mainStoryLeft02 h2 {
+        margin-bottom: 10px;
+    }
+    
+    .sixStoriesAndRight .mainStoryLeft02 img {
+        margin-bottom: 20px;
+    }
+    
+    .sixStoriesAndRight .mainBlock {
+        border-right: 2px solid #b4b4b4;
+        padding-right: 20px;
+    }
+    
+    .sixStoriesAndRight .right {
+        margin-left: 80px;
+    }
+    
+    .sixStoriesAndRight .mainStoryRight .bottomSection {
+        margin-bottom: 24px;
+    }
+    
+    .story a {
+        background-color: #007BFF;
+        font-size: 12px;
+    }
+    
+    .story .heading02 a {
+        background-color: #DC4C3A;
+    }
+    
+    .story .heading04 a {
+        background-color: #DC4C3A;
+    }
+    
+    .story .heading06 a {
+        background-color: #DC4C3A;
+    }
+    
+    .story .number h1 {
+        color: rgb(68, 9, 9);
+        font-family: 'Gulzar', serif;
+        font-size: 56px;
+        padding: 25px 35px 25px 25px;
+    }
+    
+    .story h3 {
+        padding-top: 45px;
+        font-size: 24px;
+    }
+    
+    .story .category {
+        padding-right: 275px;
+        align-content: center;
+    }
+    
+    .story .bottomPart {
+        border-bottom: 1px solid #848484;
+        display: flex;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .story .time {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .story p {
+        color: #848484;
+        font-weight: 400;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-style: italic;
+        font-size: 12px;
+    }
+    
+    .time i {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-right: 5px;
+    }

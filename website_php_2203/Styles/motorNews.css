@@ -1,0 +1,22 @@
+.motorNews .category a {
+    background-color: #4E4F4F;
+}
+
+.motorNews {
+    display: flex;
+    margin-right: 50px;
+}
+
+.motorNews .image {
+    margin-top: 10px;
+}
+
+.motorNews .blocks {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.motorNews .block02 {
+    border-left: 2px solid #848484;
+    border-right: 2px solid #848484;
+}

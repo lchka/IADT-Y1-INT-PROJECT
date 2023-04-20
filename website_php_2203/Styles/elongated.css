@@ -1,0 +1,25 @@
+.elongatedSection {
+    background-color: #e6e6e6;
+    padding: 15px 0px 15px 0px
+}
+
+.elongatedSection img {
+    display: flex;
+}
+
+.elongatedSection h3 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.writingSection .motorNews {
+    margin-bottom: 10px;
+}
+
+.writingSection p {
+    font-size: 14px;
+}
+
+.elongatedSection .category a {
+    background-color: #DC4C3A;
+}
