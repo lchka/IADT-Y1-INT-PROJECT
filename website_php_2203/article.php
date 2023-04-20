@@ -77,7 +77,7 @@ try {
     <div class="name">
         <div class="container">
             <div class="width-12 newsletter">
-                <h1>Article Section</h1>
+            <a href="home_page.php?="><h1>Article Section</h1></a>
             </div>
             <div class="width-12 articleName">
                 <h1>will have category name</h1>
@@ -117,7 +117,7 @@ try {
                 <?php foreach ($motorNews as $story) { ?>
                     <div class="blocks block01 width-4">
                         <div class="width-2 Header">
-                            <h4><a href="home_page.php?="><?= substr($story->headline, 0, 35) ?></a></h4>
+                            <h4><a href="article.php?="><?= substr($story->headline, 0, 35) ?></a></h4>
                         </div>
 
                         <div class="image image01">

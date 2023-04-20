@@ -83,7 +83,8 @@ try {
     <div class="name">
         <div class="container">
             <div class="width-12 newsletter">
-                <h1>Newsletter Website</h1>
+                <a href="home_page.php?="><h1>Newsletter Website</h1></a>
+
             </div>
             <div class="width-12 latestStory">
                 <h1>Latest Story</h1>
@@ -102,7 +103,7 @@ try {
                 <div class="top width-5">
                         <h1><?= $story->headline ?></h1>
                     <div class="writing">
-                        <p><?= substr($story->summary, 0, 471) ?>.</p>
+                        <p><?= substr($story->summary, 0, 501) ?>....</p>
 
                         <div class="readMore">
                             <a href="article.php?id= <?= $story->id ?>">
