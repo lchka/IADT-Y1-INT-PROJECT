@@ -164,6 +164,7 @@ class Story
 
         return $stories;
     }
+    // 
     public static function findById($id)
     {
         $story = null;
@@ -171,12 +172,9 @@ class Story
             $db = new DB();
             $conn = $db->open();
             $sql = "SELECT * FROM website.stories WHERE id = :id";
-            // $params = [
-            //     ":id" => $id
-            // ];
 
             $stmt = $conn->prepare($sql);
-            $stmt->bindValue(":id", PDO::PARAM_INT);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
             $status = $stmt->execute();
 
             if (!$status) {

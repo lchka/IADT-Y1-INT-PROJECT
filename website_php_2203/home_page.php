@@ -105,7 +105,7 @@ try {
                         <p><?= substr($story->summary, 0, 471) ?>.</p>
 
                         <div class="readMore">
-                            <a href="article.php?id= <? $story->id ?>">
+                            <a href="article.php?id= <?= $story->id ?>">
                                 <p>Read more</p>
                             </a>
 
@@ -133,7 +133,7 @@ try {
                     <div class="width-1 motorNews">
                         <li class="category"><a>Business</a></li>
                     </div>
-                    <p><?= substr($story->summary, 0, 124) ?>.</p>
+                    <a href="article.php?id=<?= $story->id?>"><p><?= substr($story->summary, 0, 124) ?>.</p> </a>
                 </div>
             <?php        } ?>
         </div>

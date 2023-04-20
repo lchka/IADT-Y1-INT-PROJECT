@@ -1,8 +1,8 @@
 <?php
 require "./etc/config.php";
 try {
-    $motorNews = Story::findNum(6, 7);
-    $story = Story::findById($_GET["id"]);
+    $motorNews = Story::findNum(6, 8);
+    $story = Story::findById(20);
     $category = Category::findById($story->category_id);
 } catch (Exception $ex) {
     die($ex->getMessage());
