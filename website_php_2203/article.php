@@ -116,7 +116,7 @@ try {
             <div class="rightSide width-2">
                 <?php foreach ($motorNews as $story) { ?>
                     <div class="blocks block01 width-4">
-                        <div class="width-2 Header">
+                        <div class="width-2 header">
                             <h4><a href="article.php?="><?= substr($story->headline, 0, 35) ?></a></h4>
                         </div>
 
