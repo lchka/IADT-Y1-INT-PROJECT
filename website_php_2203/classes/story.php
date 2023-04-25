@@ -24,7 +24,7 @@ class Story
         if ($props != null) {
             $this->id = $props["id"];
             $this->headline = $props["headline"];
-            $this->category_id    = $props["category_id"];
+            $this->category_id = $props["category_id"];
             $this->author = $props["author"];
             $this->publish_date = $props["publish_date"];
             $this->image_url = $props["image_url"];
@@ -87,10 +87,10 @@ class Story
     public static function findNum($number, $offset = 0)
     {
         $stories = array();
-
+        //fix code with bindValue 
         try {
             $db = new DB();
-            $conn =  $db->open();
+            $conn = $db->open();
             //$conn = $db->getConnection();
 
             $sql = "SELECT * FROM stories " . "LIMIT " . $number . " OFFSET " . $offset;

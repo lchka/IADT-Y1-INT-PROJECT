@@ -12,6 +12,20 @@
     margin-bottom: 10px;
 }
 
+.latestStory .top .readMore {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latestStory .top .readMore i {
+    margin-right: 2.5px;
+}
+
+.latestStory .top .readMore .author p {
+    font-size: 14px;
+    margin-top: 2.5px;
+}
+
 .latestStory .top .readMore a p {
     font-size: 16px;
     font-weight: 800;
@@ -19,7 +33,7 @@
     font-family: 'Titillium Web', sans-serif;
     text-align: right;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 2.5px;
 }
 
 .latestStory .top .readMore a:hover p {

@@ -93,7 +93,7 @@ try {
                     <li>Published on <?= $story->publish_date ?></li>
                 </div>
                 <div class="image width-6">
-                    <img src="<?= $story->image_url ?>">
+                    <img src=".<?= $story->image_url ?>">
                 </div>
                 <div class="authorAndTime">
                     <li>
@@ -121,7 +121,7 @@ try {
                         </div>
 
                         <div class="image image01">
-                            <img src="<?= ($story->image_url) ?>" width=200px height=110px>
+                            <img src=".<?= ($story->image_url) ?>" width=200px height=110px>
                         </div>
                     </div>
                 <?php    } ?>

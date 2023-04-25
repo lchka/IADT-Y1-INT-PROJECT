@@ -30,9 +30,13 @@ try {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Titillium+Web:wght@600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:wght@400;500;600;800;900&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gulzar&family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:wght@400;500;600;800;900&family=Titillium+Web:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="Styles/all.min.css">
     <link rel="stylesheet" href="Styles/reset.css">
@@ -83,7 +87,9 @@ try {
     <div class="name">
         <div class="container">
             <div class="width-12 newsletter">
-                <a href="home_page.php?="><h1>Newsletter Website</h1></a>
+                <a href="home_page.php?=">
+                    <h1>Newsletter Website</h1>
+                </a>
 
             </div>
             <div class="width-12 latestStory">
@@ -98,24 +104,32 @@ try {
         <div class="latestStory">
             <div class="container">
                 <div class="image width-7">
-                    <img src="<?= $story->image_url ?>">
+                    <img src=".<?= $story->image_url ?>">
                 </div>
                 <div class="top width-5">
-                        <h1><?= $story->headline ?></h1>
+                    <h1>
+                        <?= $story->headline ?>
+                    </h1>
                     <div class="writing">
-                        <p><?= substr($story->summary, 0, 501) ?>....</p>
+                        <p>
+                            <?= substr($story->summary, 0, 501) ?>....
+                        </p>
 
                         <div class="readMore">
+                            <div class="author">
+                                <p>by
+                                    <?= $story->author ?>
+                                </p>
+                            </div>
                             <a href="article.php?id= <?= $story->id ?>">
-                                <p>Read more</p>
+                                <p><i class="fa-solid fa-chevron-right"></i>Read more</p>
                             </a>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <?php        } ?>
+    <?php } ?>
     <!-- Line break -->
     <div class="lineBreak container">
     </div>
@@ -125,18 +139,26 @@ try {
             <?php foreach ($elongatedSection as $story) { ?>
 
                 <div class="imageFlex width-3">
-                    <img src="<?= $story->image_url ?>">
+                    <img src=".<?= $story->image_url ?>">
                 </div>
                 <div class="writingSection width-3">
                     <div class="width-2 Header">
-                        <h3><?= substr($story->headline, 0, 23) ?></h3>
+                        <a href="article.php?id=<?= $story->id ?>">
+                            <h3>
+                                <?= substr($story->headline, 0, 23) ?>
+                            </h3>
+                        </a>
                     </div>
                     <div class="width-1 motorNews">
                         <li class="category"><a>Business</a></li>
                     </div>
-                    <a href="article.php?id=<?= $story->id?>"><p><?= substr($story->summary, 0, 124) ?>.</p> </a>
+                    <a href="article.php?id=<?= $story->id ?>">
+                        <p>
+                            <?= substr($story->summary, 0, 124) ?>.
+                        </p>
+                    </a>
                 </div>
-            <?php        } ?>
+            <?php } ?>
         </div>
     </div>
     <!-- Line break -->
@@ -152,21 +174,36 @@ try {
 
                     <div class=" mainStoryLeft01 ">
                         <div class="headerWithPubDate">
-                            <h2><?= $story->headline ?></h2>
+                            <a href="article.php?id=<?= $story->id ?>">
+                                <h2>
+                                    <?= $story->headline ?>
+                                </h2>
+                            </a>
                             <div class="width-1 pubDate">
                                 <p>Feb 20, 2023
                                 </p>
                             </div>
                         </div>
                         <div class="paragraphMain">
-                            <p><?= substr($story->article, 0, 725) ?>.
+                            <p>
+                                <?= substr($story->article, 0, 725) ?>.
                             </p>
                         </div>
-                        <div class="author">
-                            <p>by <?= $story->author ?></p>
+                        <div class="flexSection">
+                            <div class="author">
+                                <p>by
+                                    <?= $story->author ?>
+                                </p>
+                            </div>
+                            <div class="readMore">
+                                <a href="article.php?id= <?= $story->id ?>">
+                                    <p><i class="fa-solid fa-chevron-right"></i>Read more</p>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
-                <?php   } ?>
+                <?php } ?>
             </div>
             <!-- block 1 -->
 
@@ -174,16 +211,21 @@ try {
                 <div class="mainStoryRight block1 width-3">
                     <div class="width-3 headerWithPara">
                         <div class="images">
-                            <img src="<?= $story->image_url ?>">
+                            <img src=".<?= $story->image_url ?>">
                         </div>
-                        <h3><?= $story->headline ?></h3>
+                        <a href="article.php?id=<?= $story->id ?>">
+                            <h3>
+                                <?= $story->headline ?>
+                            </h3>
+                        </a>
                         <div class="paragraphLong">
-                            <p><?= substr($story->summary, 0, 400) ?>.
+                            <p>
+                                <?= substr($story->summary, 0, 400) ?>.
                             </p>
                         </div>
                         <div class="bottomSection width-3">
                             <li class="timeTwo"><i class="fa-regular fa-clock"></i>5 mins</li>
-                            <li class="category"><a>Car Reviews</a></li>
+                            <li class="category"><a href="article.php?id= <?= $story->id ?>">Car Reviews</a></li>
                         </div>
                     </div>
                 </div>
@@ -206,18 +248,23 @@ try {
 
                 <div class="width-3 greyBlock">
                     <div class="width-2 header">
-                        <h4><?= $story->headline ?></h4>
+                        <h4>
+                            <a href="article.php?id= <?= $story->id ?>"><?= $story->headline ?></a>
+                        </h4>
                     </div>
                     <li>
-                        <p class="width-3"> <?= substr($story->summary, 0, 285); ?>
+                        <p class="width-3">
+                            <?= substr($story->summary, 0, 285); ?>
                         </p>
                     </li>
                     <li class="author">
-                        <p>by <?= $story->author ?></p>
+                        <p>by
+                            <?= $story->author ?>
+                        </p>
                     </li>
                 </div>
 
-            <?php        } ?>
+            <?php } ?>
 
         </div>
     </div>
@@ -241,19 +288,25 @@ try {
 
                     <div class="story">
                         <div class=" width-1 number">
-                            <h1><?php echo $count ?></h1>
+                            <h1>
+                                <?php echo $count ?>
+                            </h1>
                         </div>
                         <div class="width-5 topPart">
-                            <h3><?= substr($story->headline, 0, 50) ?></h3>
+                            <h3>
+                                <?= substr($story->headline, 0, 50) ?>
+                            </h3>
                             <div class="bottomPart">
-                                <li class="category"><a> Features </a></li>
+                                <li class="category"><a href="article.php?id= <?= $story->id ?>"> Features </a></li>
 
-                                <p class="time"><i class="fa-regular fa-clock"></i><?= $story->read_time ?></p>
+                                <p class="time"><i class="fa-regular fa-clock"></i>
+                                    <?= $story->read_time ?>
+                                </p>
                             </div>
                         </div>
 
                     </div>
-                <?php $count++;
+                    <?php $count++;
                 } ?>
             </div>
 
@@ -263,21 +316,31 @@ try {
                 <?php foreach ($sixButRight as $story) { ?>
                     <div class=" mainStoryLeft02 ">
                         <div class="image">
-                            <img src="<?= $story->image_url ?>">
+                            <img src=".<?= $story->image_url ?>">
                         </div>
                         <div class="headerWithPubDate">
-                            <h2><?= $story->headline ?></h2>
+                            <h2>
+                                <a href="article.php?id=<?= $story->id ?>"><?= $story->headline ?></a>
+                            </h2>
                             <div class="width-1 pubDate">
                                 <p>Feb 20, 2023
                                 </p>
                             </div>
                         </div>
                         <div class="paragraphMain">
-                            <p><?= substr($story->summary, 0, 590) ?>
+                            <p>
+                                <?= substr($story->summary, 0, 590) ?>
                             </p>
                         </div>
-                        <div class="author">
-                            <p>by <?= $story->author ?></p>
+                        <div class="readMore">
+                            <div class="author">
+                                <p>by
+                                    <?= $story->author ?>
+                                </p>
+                            </div>
+                            <a href="article.php?id= <?= $story->id ?>">
+                                <p><i class="fa-solid fa-chevron-right"></i>Read more</p>
+                            </a>
                         </div>
                     </div>
                 <?php } ?>
@@ -295,16 +358,18 @@ try {
 
                 <div class="width-4 blocks block01">
                     <div class="width-2 Header">
-                        <h4><?= substr($story->headline, 0, 28) ?></h4>
+                        <h4>
+                            <?= substr($story->headline, 0, 28) ?>
+                        </h4>
                     </div>
                     <div class="width-1 MotorNews">
-                        <li class="category"><a>Motor News</a></li>
+                        <li class="category"><a href="article.php?id= <?= $story->id ?>">Motor News</a></li>
                     </div>
                     <div class="image image01">
-                        <img src="<?= $story->image_url ?>">
+                        <img src=".<?= $story->image_url ?>">
                     </div>
                 </div>
-            <?php    } ?>
+            <?php } ?>
         </div>
     </div>
     <!-- Line break -->
