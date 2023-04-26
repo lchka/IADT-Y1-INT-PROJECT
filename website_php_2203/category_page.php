@@ -181,7 +181,7 @@ try {
                     <li><a href="">Ebooks
                         </a> </li>
                     <li><a href="">Mobile & Apps</a> </li>
-                    <img src="/images/app-store-badges-en 1.png">
+                    
                 </ul>
             </div>
 
@@ -189,7 +189,7 @@ try {
         </div>
 
         <div class="copyright flex">
-            <p><i class="fa-regular fa-copyright"></i>2023 Newsletter Website</p>
+            <p><i class="fa-regular fa-copyright"></i>2023 Straight-Piped News</p>
         </div>
 
     </footer>

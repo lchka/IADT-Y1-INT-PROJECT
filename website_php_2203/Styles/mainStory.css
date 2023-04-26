@@ -10,7 +10,15 @@
     padding-bottom: 0px;
 }
 
-.mainStory a:hover {
+.mainStory a:hover h3 {
+    color: #FFC845;
+}
+
+.mainStoryLeft a:hover h2 {
+    color: #FFC845;
+}
+
+.mainStoryLeft .readMore a:hover {
     color: #FFC845;
 }
 

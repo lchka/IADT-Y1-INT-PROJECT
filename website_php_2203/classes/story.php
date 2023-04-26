@@ -133,7 +133,7 @@ class Story
             $conn = $db->open();
             //$conn = $db->getConnection();
 
-            $sql = "SELECT * FROM website.stories " . "ORDER BY " . $publish_date . " LIMIT " . $limit;
+            $sql = "SELECT * FROM website.stories " . " ORDER BY " . $publish_date . " LIMIT " . $limit;
             $params = [
                 ":limit" => $limit,
                 ":order by" => $publish_date

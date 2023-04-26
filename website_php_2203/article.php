@@ -223,7 +223,7 @@ try {
         </div>
 
         <div class="copyright flex">
-            <p><i class="fa-regular fa-copyright"></i>2023 Newsletter Website</p>
+            <p><i class="fa-regular fa-copyright"></i>2023 Straight-Piped News</p>
         </div>
 
     </footer>
