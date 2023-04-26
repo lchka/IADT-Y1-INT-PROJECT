@@ -109,11 +109,10 @@ class Category
             // $conn = $db->getConnection();
 
             $sql = "SELECT * FROM website.categories WHERE name = :name";
-            $params = [
-                ":name" => $name
-            ];
+
             $stmt = $conn->prepare($sql);
-            $status = $stmt->execute($params);
+            $stmt->bindValue(':name', $name, PDO::PARAM_INT);
+            $status = $stmt->execute();
 
             if (!$status) {
                 $error_info = $stmt->errorInfo();

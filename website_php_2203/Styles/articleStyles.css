@@ -9,15 +9,15 @@
      padding-bottom: 0px;
  }
  
- .rightSide .header a:hover {
-     text-shadow: 0.1px 0.25px black;
+ .rightSide .header h4:hover {
+     text-shadow: 0.3px 0.25px black;
  }
  
  .article p {
      font-size: 16px;
      line-height: 30px;
      font-family: "Merriweather", serif;
-     margin-bottom: 80px;
+     margin-bottom: 40px;
  }
  
  .article li {
@@ -36,8 +36,10 @@
  }
  
  .article .pubDate {
+     display: flex;
      margin-bottom: 10px;
      text-align: right;
+     justify-content: space-between;
  }
  
  .article .rightSide {
@@ -52,4 +54,26 @@
  
  .article .authorAndTime i {
      margin-right: 5px;
+ }
+ 
+ .article .readMore a p {
+     font-size: 16px;
+     font-weight: 800;
+     text-transform: uppercase;
+     font-family: 'Titillium Web', sans-serif;
+     text-align: right;
+     margin-bottom: 30px;
+     margin-top: 2.5px;
+ }
+ 
+ .article .readMore a:hover p {
+     color: #FFC845;
+ }
+ 
+ .article .readMore i {
+     margin-right: 2.5px;
+ }
+ 
+ .article .emptyBox {
+     border-right: 2px solid #848484;
  }

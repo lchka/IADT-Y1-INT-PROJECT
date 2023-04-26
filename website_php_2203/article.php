@@ -20,9 +20,13 @@ try {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Titillium+Web:wght@600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:wght@400;500;600;800;900&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gulzar&family=Merriweather+Sans:wght@500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:wght@400;500;600;800;900&family=Titillium+Web:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="Styles/all.min.css">
     <link rel="stylesheet" href="Styles/reset.css">
@@ -77,10 +81,9 @@ try {
     <div class="name">
         <div class="container">
             <div class="width-12 newsletter">
-            <a href="home_page.php?="><h1>Article Section</h1></a>
-            </div>
-            <div class="width-12 articleName">
-                <h1>will have category name</h1>
+                <a href="home_page.php?=">
+                    <h1>Article Section</h1>
+                </a>
             </div>
         </div>
     </div>
@@ -90,41 +93,62 @@ try {
 
             <div class="leftSide width-9">
                 <div class="pubDate">
-                    <li>Published on <?= $story->publish_date ?></li>
+                    <li>Published on
+                        <?= $story->publish_date ?>
+                    </li>
+                    <li>Published time
+                        <?= $story->publish_time ?>
+                    </li>
                 </div>
                 <div class="image width-6">
                     <img src=".<?= $story->image_url ?>">
                 </div>
                 <div class="authorAndTime">
                     <li>
-                        by <?= $story->author ?>
+                        by
+                        <?= $story->author ?>
                     </li>
-                    <li class="timeTwo">read time: <i class="fa-regular fa-clock"></i><?= $story->read_time ?></li>
+                    <li class="timeTwo">read time: <i class="fa-regular fa-clock"></i>
+                        <?= $story->read_time ?>
+                    </li>
                 </div>
                 <div class="title width-6">
-                    <h1><?= $story->headline ?></h1>
+                    <h1>
+                        <?= $story->headline ?>
+                    </h1>
                 </div>
                 <div class="aritclePara">
-                    <p><?= $story->article ?> </p>
+                    <p>
+                        <?= $story->article ?>
+                    </p>
+                </div>
+                <div class="readMore">
+                    <a href="home_page.php">
+                        <p><i class="fa-solid fa-chevron-right"></i>back to Home Page</p>
+                    </a>
                 </div>
             </div>
 
 
             <!-- empty box for now -->
             <div class="emptyBox width-1"> </div>
+
+
             <!-- right side of the page -->
             <div class="rightSide width-2">
                 <?php foreach ($motorNews as $story) { ?>
                     <div class="blocks block01 width-4">
                         <div class="width-2 header">
-                            <h4><a href="article.php?="><?= substr($story->headline, 0, 35) ?></a></h4>
+                            <h4><a href="article.php?=">
+                                    <?= substr($story->headline, 0, 35) ?>
+                                </a></h4>
                         </div>
 
                         <div class="image image01">
                             <img src=".<?= ($story->image_url) ?>" width=200px height=110px>
                         </div>
                     </div>
-                <?php    } ?>
+                <?php } ?>
             </div>
         </div>
     </div>
