@@ -1,0 +1,16 @@
+.button .readMore i {
+    margin-right: 5px;
+}
+
+.button .readMore a p {
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.button .readMore a:hover p {
+    color: #FFC845;
+}

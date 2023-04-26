@@ -2,7 +2,6 @@
 require_once './etc/config.php';
 
 try {
-    //  $stories = Story::findAll();
     $categories = Category::findAll();
     $mainStoryRight = Story::findNum(2, 10);
     $mainStoryLeft = Story::findNum(1, 8);
@@ -60,16 +59,16 @@ try {
         <div class="container">
             <div class="navBar width-6">
                 
-                <a href="">
+                <a href="category_page.php?id=3">
                     <li>Motor Sport</li>
                 </a>
-                <a href="">
+                <a href="category_page.php?id=2">
                     <li>Car Reviews</li>
                 </a>
-                <a href="">
+                <a href="category_page.php?id=4">
                     <li>Features</li>
                 </a>
-                <a href="">
+                <a href="category_page.php?id=1">
                     <li>Business</li>
                 </a>
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>

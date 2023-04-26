@@ -51,16 +51,16 @@ try {
     <header>
         <div class="container">
             <div class="navBar width-6">
-                <a>
+                <a href="category_page.php?id=3">
                     <li>Motor Sport</li>
                 </a>
-                <a>
+                <a href="category_page.php?id=2">
                     <li>Car Reviews</li>
                 </a>
-                <a>
+                <a href="category_page.php?id=4">
                     <li>Features</li>
                 </a>
-                <a>
+                <a href="category_page.php?id=1">
                     <li>Business</li>
                 </a>
                 <a><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -69,11 +69,11 @@ try {
                 <a>
                     <li class="subscribe">Subscribe</li>
                 </a>
-                <a>
-                    <a href="home_page.php?=">
+                
+                    <a href="home_page.php">
                         <li>HOME</li>
                     </a>
-                </a>
+               
             </div>
         </div>
     </header>

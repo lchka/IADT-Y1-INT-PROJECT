@@ -165,6 +165,45 @@ class Story
         return $stories;
     }
     // 
+    public static function findbyCategory($category_id,$number, $offset = 0)
+    {
+        $stories =array() ;
+
+        try {
+            $db = new DB();
+            $conn = $db->open();
+           
+
+            $sql = "SELECT * FROM website.stories WHERE category_id=" . $category_id . " LIMIT " . $number . " OFFSET " . $offset;
+            $stmt = $conn->prepare($sql);
+            // $stmt->bindValue(':category_id',$category_id, PDO::PARAM_INT);
+            // $stmt->bindValue(':LIMIT',$number, PDO::PARAM_INT);
+            // $stmt->bindValue(':OFFSET',$offset, PDO::PARAM_INT);
+            $status = $stmt->execute();
+
+            if (!$status) {
+                $error_info = $stmt->errorInfo();
+                $message = "SQLSTATE error code = " . $error_info[0] . "; error message = " . $error_info[2];
+                throw new Exception("Database error executing database query: " . $message);
+            }
+
+            if ($stmt->rowCount() !== 0) {
+                $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                while ($row !== FALSE) {
+                    $story = new Story($row);
+                    $stories[] = $story;
+
+                    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                }
+            }
+        } finally {
+            if ($db !== null && $db->isOpen()) {
+                $db->close();
+            }
+        }
+
+        return $stories;
+    }
     public static function findById($id)
     {
         $story = null;
