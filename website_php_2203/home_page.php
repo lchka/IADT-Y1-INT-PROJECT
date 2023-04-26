@@ -51,7 +51,7 @@ try {
     <link rel="stylesheet" href="Styles/latestStory.css">
     <link rel="stylesheet" href="Styles/header.css">
 
-    <title>Newsletter Website</title>
+    <title>Straight Piped News</title>
 </head>
 
 <body>
@@ -59,25 +59,26 @@ try {
     <header>
         <div class="container">
             <div class="navBar width-6">
-                <a>
+                
+                <a href="">
                     <li>Motor Sport</li>
                 </a>
-                <a>
+                <a href="">
                     <li>Car Reviews</li>
                 </a>
-                <a>
+                <a href="">
                     <li>Features</li>
                 </a>
-                <a>
+                <a href="">
                     <li>Business</li>
                 </a>
-                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <div class="navBarSignIn width-6">
-                <a>
+                <a href="">
                     <li class="subscribe">Subscribe</li>
                 </a>
-                <a>
+                <a href="">
                     <li>Sign In</li>
                 </a>
             </div>
@@ -88,7 +89,7 @@ try {
         <div class="container">
             <div class="width-12 newsletter">
                 <a href="home_page.php?=">
-                    <h1>Newsletter Website</h1>
+                    <h1>Straight Piped News</h1>
                 </a>
 
             </div>
@@ -142,7 +143,7 @@ try {
                     <img src=".<?= $story->image_url ?>">
                 </div>
                 <div class="writingSection width-3">
-                    <div class="width-2 Header">
+                    <div class="width-2 header">
                         <a href="article.php?id=<?= $story->id ?>">
                             <h3>
                                 <?= substr($story->headline, 0, 23) ?>
@@ -294,7 +295,7 @@ try {
                         </div>
                         <div class="width-5 topPart">
                             <h3>
-                                <?= substr($story->headline, 0, 50) ?>
+                            <a href="article.php?id= <?= $story->id ?>"><?= substr($story->headline, 0, 50) ?></a>
                             </h3>
                             <div class="bottomPart">
                                 <li class="category"><a href="article.php?id= <?= $story->id ?>"> Features </a></li>

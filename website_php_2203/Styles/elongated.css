@@ -3,6 +3,10 @@
     padding: 15px 0px 15px 0px
 }
 
+.elongatedSection .writingSection .header a:hover {
+    color: #DC4C3A;
+}
+
 .elongatedSection p:hover {
     text-shadow: 0.5px 0px black;
 }
