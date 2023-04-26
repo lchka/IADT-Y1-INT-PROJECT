@@ -52,7 +52,7 @@ try {
         <div class="container">
             <div class="navBar width-6">
                 <a href="category_page.php?id=3">
-                    <li>Motor Sport</li>
+                    <li>Motor News</li>
                 </a>
                 <a href="category_page.php?id=2">
                     <li>Car Reviews</li>

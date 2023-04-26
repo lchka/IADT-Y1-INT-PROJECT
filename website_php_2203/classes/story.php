@@ -93,7 +93,7 @@ class Story
             $conn = $db->open();
             //$conn = $db->getConnection();
 
-            $sql = "SELECT * FROM stories " . "LIMIT " . $number . " OFFSET " . $offset;
+            $sql = "SELECT * FROM stories " . " LIMIT " . $number . " OFFSET " . $offset;
             $params = [
                 ":limit" => $number,
                 ":offset" => $offset

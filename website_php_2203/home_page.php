@@ -60,7 +60,7 @@ try {
             <div class="navBar width-6">
                 
                 <a href="category_page.php?id=3">
-                    <li>Motor Sport</li>
+                    <li>Motor News</li>
                 </a>
                 <a href="category_page.php?id=2">
                     <li>Car Reviews</li>
@@ -150,7 +150,7 @@ try {
                         </a>
                     </div>
                     <div class="width-1 motorNews">
-                        <li class="category"><a <a href="article.php?id= <?= $story->id ?>">Business</a></li>
+                        <li class="category"><a href="category_page.php?id=1">Business</a></li>
                     </div>
                     <a href="article.php?id=<?= $story->id ?>">
                         <p>
@@ -225,7 +225,7 @@ try {
                         </div>
                         <div class="bottomSection width-3">
                             <li class="timeTwo"><i class="fa-regular fa-clock"></i>5 mins</li>
-                            <li class="category"><a href="article.php?id= <?= $story->id ?>">Car Reviews</a></li>
+                            <li class="category"><a href="category_page.php?id=2">Car Reviews</a></li>
                         </div>
                     </div>
                 </div>
@@ -297,7 +297,7 @@ try {
                             <a href="article.php?id= <?= $story->id ?>"><?= substr($story->headline, 0, 50) ?></a>
                             </h3>
                             <div class="bottomPart">
-                                <li class="category"><a href="article.php?id= <?= $story->id ?>"> Features </a></li>
+                                <li class="category"><a href="category_page.php?id=4"> Features </a></li>
 
                                 <p class="time"><i class="fa-regular fa-clock"></i>
                                     <?= $story->read_time ?>
@@ -364,7 +364,7 @@ try {
                     </a>
                     </div>
                     <div class="width-1 MotorNews">
-                        <li class="category"><a href="article.php?id= <?= $story->id ?>">Motor News</a></li>
+                        <li class="category"><a href="category_page.php?id=3">Motor News</a></li>
                     </div>
                     <div class="image image01">
                         <img src=".<?= $story->image_url ?>">

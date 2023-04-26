@@ -49,7 +49,7 @@ try {
         <div class="container">
             <div class="navBar width-6">
                 <a href="category_page.php?id=3">
-                    <li>Motor Sport</li>
+                    <li>Motor News</li>
                 </a>
                 <a href="category_page.php?id=2">
                     <li>Car Reviews</li>
@@ -84,7 +84,7 @@ try {
         </div>
     </div>
 
-    <!-- Main Category Stories -->
+    <!-- Main Category Stories and home button -->
     <div class="mainStory">
         <div class="container">
             <?php foreach ($categoryFind as $story) { ?>
@@ -120,7 +120,6 @@ try {
         </div>
 
     </div>
-
 
     <!-- FOOTER -->
     <footer>
