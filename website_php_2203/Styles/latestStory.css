@@ -21,6 +21,10 @@
     margin-right: 2.5px;
 }
 
+.latestStory .top h1 A:hover {
+    color: #da0000;
+}
+
 .latestStory .top .readMore .author p {
     font-size: 14px;
     margin-top: 2.5px;

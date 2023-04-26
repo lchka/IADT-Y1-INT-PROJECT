@@ -89,7 +89,7 @@ try {
         <div class="container">
             <div class="width-12 newsletter">
                 <a href="home_page.php?=">
-                    <h1>Straight Piped News</h1>
+                    <h1>Straight-Piped News</h1>
                 </a>
 
             </div>

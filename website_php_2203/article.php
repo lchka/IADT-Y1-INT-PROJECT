@@ -78,7 +78,7 @@ try {
         </div>
     </header>
     <!-- website name and latest story -->
-    <div class="name">
+    <div class="nameTwo">
         <div class="container">
             <div class="width-12 newsletter">
                 <a href="home_page.php?=">

@@ -2,11 +2,14 @@
      background-color: rgb(247, 247, 247);
  }
  
- .name .articleName h1 {
+ .nameTwo h1 {
      color: #da0000;
-     font-family: 'Titillium Web', sans-serif;
+     font-family: 'Merriweather', serif;
      font-size: 32px;
      padding-bottom: 0px;
+     text-align: left;
+     margin-left: 310px;
+     font-style: italic;
  }
  
  .rightSide .header h4:hover {
