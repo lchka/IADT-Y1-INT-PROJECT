@@ -2,7 +2,7 @@
 require "./etc/config.php";
 try {
     $motorNews = Story::findNum(6, 8);
-    $story = Story::findById(20);
+    $story = Story::findById($_GET["id"]);
     $category = Category::findById($story->category_id);
 } catch (Exception $ex) {
     die($ex->getMessage());
@@ -139,8 +139,8 @@ try {
                 <?php foreach ($motorNews as $story) { ?>
                     <div class="blocks block01 width-4">
                         <div class="width-2 header">
-                            <h4><a href="article.php?=">
-                                    <?= substr($story->headline, 0, 35) ?>
+                            <h4><a href="article.php?id=<?= $story->id ?>"><?= substr($story->headline, 0, 35) ?>
+                                    
                                 </a></h4>
                         </div>
 

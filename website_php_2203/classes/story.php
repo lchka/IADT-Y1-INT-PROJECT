@@ -174,7 +174,8 @@ class Story
             $sql = "SELECT * FROM website.stories WHERE id = :id";
 
             $stmt = $conn->prepare($sql);
-            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+            // $id=10;
             $status = $stmt->execute();
 
             if (!$status) {

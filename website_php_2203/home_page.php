@@ -108,7 +108,7 @@ try {
                 </div>
                 <div class="top width-5">
                     <h1>
-                        <?= $story->headline ?>
+                    <a href="article.php?id= <?= $story->id ?>"><?= $story->headline ?></a>
                     </h1>
                     <div class="writing">
                         <p>
@@ -150,7 +150,7 @@ try {
                         </a>
                     </div>
                     <div class="width-1 motorNews">
-                        <li class="category"><a>Business</a></li>
+                        <li class="category"><a <a href="article.php?id= <?= $story->id ?>">Business</a></li>
                     </div>
                     <a href="article.php?id=<?= $story->id ?>">
                         <p>
@@ -211,7 +211,7 @@ try {
                 <div class="mainStoryRight block1 width-3">
                     <div class="width-3 headerWithPara">
                         <div class="images">
-                            <img src=".<?= $story->image_url ?>">
+                            <img src=".<?= $story->image_url ?>" height="178"> 
                         </div>
                         <a href="article.php?id=<?= $story->id ?>">
                             <h3>
@@ -357,10 +357,11 @@ try {
             <?php foreach ($motorNews as $story) { ?>
 
                 <div class="width-4 blocks block01">
-                    <div class="width-2 Header">
-                        <h4>
-                            <?= substr($story->headline, 0, 28) ?>
+                    <div class="width-2 header">
+                         <a href="article.php?id= <?= $story->id ?>"><h4>
+                           <?= substr($story->headline, 0, 28) ?>
                         </h4>
+                    </a>
                     </div>
                     <div class="width-1 MotorNews">
                         <li class="category"><a href="article.php?id= <?= $story->id ?>">Motor News</a></li>
