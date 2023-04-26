@@ -224,7 +224,7 @@ try {
                             </p>
                         </div>
                         <div class="bottomSection width-3">
-                            <li class="timeTwo"><i class="fa-regular fa-clock"></i>5 mins</li>
+                            <li class="timeTwo"><i class="fa-regular fa-clock"></i><?= $story->read_time?></li>
                             <li class="category"><a href="category_page.php?id=2">Car Reviews</a></li>
                         </div>
                     </div>

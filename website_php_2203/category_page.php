@@ -96,7 +96,7 @@ try {
                             </h3>
                         </a>
                         <div class="bottomSection width-3">
-                            <li class="timeTwo"><i class="fa-regular fa-clock"></i>5 mins</li>
+                            <li class="timeTwo"><i class="fa-regular fa-clock"></i><?= $story->read_time?></li>
 
                         </div>
                     </div>
